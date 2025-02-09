@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./pages/styles/courses.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./pages/styles/courses.css">
+  </head>
+<body style="background-color: rgb(204, 204, 204);">
+        <!-- Nav session starts -->
+        <nav>
+          <div class="logo">
+              <img src="./public/images/logo/logo.png" height="100px" alt="">
+          </div>
+            <ul id="menulist">
+              <li>
+              <div class="dropdown1">
+                  <button onclick="myFunction1()" class="dropbtn1"> <a href="./course.html">Courses</a></button>
+                  <div id="myDropdown1" class="dropdown-content1">
+                    <a href="#">Java</a>
+                    <a href="#">Php</a>
+                    <a href="#">Html</a>
+                    <a href="#">Css</a>
+                    <a href="#">Js</a>
+                    <a href="#">Explore more -></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown2">
+                  <button onclick="myFunction2()" class="dropbtn2"> <a href="./mentor.html"> Mentors </a> </button>
+                  <div id="myDropdown2" class="dropdown-content2">
+                    <a href="#">Yash</a>
+                    <a href="#">Krupa</a>
+                    <a href="#">Jeet</a>
+                    <a href="#">Manas</a>
+                    <a href="#">Premraj</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown3">
+                  <button onclick="myFunction3()" class="dropbtn3">Lectures</button>
+                  <div id="myDropdown3" class="dropdown-content3">
+                    <a href="#">Free Lectures</a>
+                    <a href="#">Paid Lectures</a>
+                    <a href="#">Explore more</a>
+                  </div>
+                </div>
+              </li>
+              <li><button> <a href="../login/index.html"> Log-in </a></button></li>
+              <li><button>Sign-up</button></li>
+              </ul>
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          </div>
+      </nav>
+      <!-- Nav session ends  -->
+  
+    <center><h1 class="mt-5" style="font-size:35px"><b><i style="line-height: 1; color: rgb(30, 48, 80);">------</i> COURSE'S <i style="line-height: 1; color: rgb(30, 48, 80);">------</i></b></h1></center>
+    <div data-aos="fade"
+    data-aos-duration="3000">
+    <div class="cardsmain" style="display:flex; flex-wrap: wrap; gap:30px; justify-content: space-evenly; margin-top: 20px;">
+        <div class="card rounded" style="width:25rem;">
+        <img src="./public/images/courses/java.jpeg" class="card-img-top rounded-top" height="250px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> Java</h5>
+          <p class="card-text">
+            🔹 Type: Object-Oriented Programming (OOP) Language
+            🔹 Usage:
+            
+            Android App Development (via Android Studio)
+            Enterprise Applications (Spring Boot, Hibernate)
+            Backend Development
+            Game Development (Minecraft uses Java)
+            Desktop Applications
+            🔹 Features:
+            Platform-independent (Write Once, Run Anywhere - WORA)
+            Strongly typed (strict variable declarations)
+            Multi-threaded and secure
+            Used by large-scale enterprises</p>
+        </div>
+        <h5 class="card-title">&nbsp; &nbsp;Prices</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Rs:- 999/year</li>
+          <li class="list-group-item">Rs:- 679/half-year</li>
+          <li class="list-group-item">Rs:- 479/quaters</li>
+          <li class="list-group-item">Rs:- 349/month</li>
+          <li class="list-group-item">Rs:- 209/week</li>
+          <li class="list-group-item">Rs:- 149/lecture</li>
+        </ul>
+        <div class="card-body">
+          <a href="./payment.html" class="btn btn-outline-success">Enroll Now</a>
+          <a href="#" class="btn btn-outline-danger">See Course Achivements</a>
+        </div>
+      </div>
+      <div class="card rounded" style="width:25rem;">
+        <img src="./public/images/courses/php.jpeg" class="card-img-top rounded-top" height="250px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> PHP (Hypertext Preprocessor)</h5>
+          <p class="card-text">
+            🔹 Type: Server-Side Scripting Language
+            🔹 Usage:
+            
+            Web Development (Laravel, WordPress, Drupal)
+            Backend Development (APIs & Databases)
+            E-commerce websites (Magento, WooCommerce)
+            Dynamic Website Content Management
+            🔹 Features:
+            Can be embedded into HTML
+            Open-source & widely used in web hosting
+            Works well with MySQL, PostgreSQL databases
+            Powers 80% of websites (e.g., Facebook, Wikipedia)</p>
+        </div>
+        <h5 class="card-title">&nbsp; &nbsp;Prices</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Rs:- 1499/year</li>
+          <li class="list-group-item">Rs:- 1099/half-year</li>
+          <li class="list-group-item">Rs:- 949/quaters</li>
+          <li class="list-group-item">Rs:- 599/month</li>
+          <li class="list-group-item">Rs:- 399/week</li>
+          <li class="list-group-item">Rs:- 199/lecture</li>
+        </ul>
+        <div class="card-body">
+          <a href="./payment.html" class="btn btn-outline-success">Enroll Now</a>
+          <a href="#" class="btn btn-outline-danger">See Course Achivements</a>
+        </div>
+      </div>
+      <div class="card rounded" style="width:25rem;">
+        <img src="./public/images/courses/js.png " class="card-img-top rounded-top" height="250px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript (JS)</h5>
+          <p class="card-text">
+            🔹 Type: Scripting Language for Web Development
+            🔹 Usage:
+            
+            Frontend Development (React, Vue, Angular)
+            Backend Development (Node.js)
+            Web Applications & Dynamic Websites
+            Mobile & Desktop Applications (Electron.js, React Native)
+            🔹 Features:
+            Lightweight and fast
+            Supports both client-side & server-side programming
+            Can be used with HTML & CSS to make web pages interactive
+            Event-driven programming (handles user interactions)</p>
+        </div>
+        <h5 class="card-title">&nbsp; &nbsp;Prices</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Rs:- 1799/year</li>
+          <li class="list-group-item">Rs:- 1349/half-year</li>
+          <li class="list-group-item">Rs:- 849/quarters</li>
+          <li class="list-group-item">Rs:- 499/month</li>
+          <li class="list-group-item">Rs:- 229/week</li>
+          <li class="list-group-item">Rs:- 109/lecture</li>
+        </ul>
+        <div class="card-body">
+          <a href="./payment.html" class="btn btn-outline-success">Enroll Now</a>
+          <a href="#" class="btn btn-outline-danger">See Course Achivements</a>
+        </div>
+      </div>
+      <div class="card rounded" style="width:25rem;">
+        <img src="./public/images/courses/html.png " class="card-img-top rounded-top" height="250px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> HTML (HyperText Markup Language)</h5>
+          <p class="card-text">
+            🔹 Type: Markup Language (NOT a programming language)
+            🔹 Usage:
+            
+            Structuring Web Pages
+            Defining Text, Images, Videos, Links, Forms, Tables
+            Works with CSS & JavaScript to build websites
+            🔹 Features:
+            Uses tags (e.g., <h1>, <p>, <div>) to define content
+            Responsive & accessible design when combined with CSS
+            Forms the backbone of web pages</p>
+        </div>
+        <h5 class="card-title">&nbsp; &nbsp;Prices</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Rs:- 999/year</li>
+          <li class="list-group-item">Rs:- 749/half-year</li>
+          <li class="list-group-item">Rs:- 499/quater</li>
+          <li class="list-group-item">Rs:- 279/month</li>
+          <li class="list-group-item">Rs:- 149/week</li>
+          <li class="list-group-item">Rs:- 99/lecture</li>
+        </ul>
+        <div class="card-body">
+          <a href="./payment.html" class="btn btn-outline-success">Enroll Now</a>
+          <a href="#" class="btn btn-outline-danger">See Course Achivements</a>
+        </div>
+      </div>
+      <div class="card rounded" style="width:25rem;">
+        <img src="./public/images/courses/css.jpeg" class="card-img-top rounded-top" height="250px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CSS (Cascading Style Sheets)</h5>
+          <p class="card-text">
+            🔹 Type: Styling Language (NOT a programming language)
+            🔹 Usage:
+            
+            Designing and Beautifying Web Pages
+            Making websites responsive (Media Queries, Flexbox, Grid)
+            Animation & Effects (CSS Transitions, Keyframes)
+            🔹 Features:
+            Controls colors, fonts, spacing, layouts
+            Supports CSS frameworks (Bootstrap, Tailwind)
+            Works with HTML & JavaScript to create modern UI/UX</p>
+        </div>
+        <h5 class="card-title">&nbsp; &nbsp;Prices</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Rs:- 1449/year</li>
+          <li class="list-group-item">Rs:- 1099/half-year</li>
+          <li class="list-group-item">Rs:- 849/quarters</li>
+          <li class="list-group-item">Rs:- 499/month</li>
+          <li class="list-group-item">Rs:- 299/week</li>
+          <li class="list-group-item">Rs:- 149/lecture</li>
+        </ul>
+        <div class="card-body">
+          <a href="./payment.html" class="btn btn-outline-success">Enroll Now</a>
+          <a href="#" class="btn btn-outline-danger">See Course Achivements</a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <center>
+        <p style="margin-top: 50px;align-content: end;">...More Subjects will Added in the future...</p>
+    </center>
+    </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/12/09/13/20241209133522-WOF7UYCU.js"></script>
+    
+</html>

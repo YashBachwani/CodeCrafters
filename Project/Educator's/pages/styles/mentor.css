@@ -1,0 +1,152 @@
+*{
+    overflow-x: clip;
+}
+  /* Nav Bar Session Starts */
+  nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d5b59;
+    color:#e8f4fc;
+    position: relative;
+    height: 100px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  a{
+    text-decoration: none;
+    color:black;
+  }
+
+  
+  nav ul{
+    display: flex;
+    gap:30px;
+  }
+  nav ul li{
+    list-style-type: none;
+    color:#e8f4fc;
+  }
+  .menu-icon i{
+    color:#e8f4fc;
+    font-size: 30px;
+  }
+  #menulist{
+    transition: all 0.5s;
+    margin-top: 25px
+    
+    ;
+  }
+  .menu-icon{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 600px){
+    nav ul{
+      position: absolute;
+      top:70px;
+      left:0;
+      right:0;
+      flex-direction: column;
+      text-align: center;
+      gap:0;
+      background: #383838;
+      color: #dceefa;
+      overflow: hidden;
+    }
+    nav ul li{
+      padding:20px;
+      color: #dceefa;
+    }
+    .menu-icon{
+      display: block;
+    }
+    #menulist{
+      transition: all 0.5s;
+    }
+  }
+  .dropdown1,.dropdown2,.dropdown3 {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content1,.dropdown-content2,.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #383838;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: #dceefa;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content1 a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+  }
+  .dropdown-content2 a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+  }
+  .dropdown-content3 a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content1 a:hover {background-color: #ddd;}
+  .dropdown-content2 a:hover {background-color: #ddd;}
+  .dropdown-content3 a:hover {background-color: #ddd;}
+  
+  .show {
+    display: block;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .dropdown-content1, .dropdown-content2, .dropdown-content3{
+      position: relative;
+      width:160px;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      margin-left: 25%;
+    }
+  }
+  button{
+    border:none;
+    background-color: #a8f1d0;
+    padding-bottom: 2px;
+    transition: ease-in-out 2s;
+    color: black;
+    height: 40px;
+    width:100px;
+    border-radius: 30px;
+    animation: effect 3s forwards;
+    margin-bottom: 20px;
+  }
+  button:hover{
+    border-bottom: 2px solid #e8f4fc;
+  }
+  @keyframes effect {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+/* Nav Bar Session Ends */
+
